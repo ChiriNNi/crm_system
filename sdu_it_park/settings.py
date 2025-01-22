@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'sdu_it_park.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'crm_system',  # Имя вашей базы данных
-        'USER': 'postgres',  # Ваш пользователь базы данных
-        'PASSWORD': '12345',  # Ваш пароль пользователя базы данных
-        'HOST': 'localhost',
+        'NAME': 'crm_system_db_v2nx',  # Имя вашей базы данных
+        'USER': 'technopark_it',  # Ваш пользователь базы данных
+        'PASSWORD': '1nhrhgc6akr02y5GU3RqjEIr48mh1iEw',  # Ваш пароль пользователя базы данных
+        'HOST': 'dpg-cu8hnndsvqrc73bara20-a',
         'PORT': '5432',  # Стандартный порт PostgreSQL
     }
 }
