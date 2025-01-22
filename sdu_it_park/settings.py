@@ -26,11 +26,7 @@ SECRET_KEY = 'django-insecure-u)p_^cry56qw%trn155vno#9l0&o%qps59!3%-orhxrg8!tcjs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'crm-system-hkxd.onrender.com']
-
-port = int(os.environ.get("PORT", 8000))  # Использует переменную PORT, если она есть, иначе 8000 по умолчанию.
-
-
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', 'crm-system-hkxd.onrender.com']
 
 # Application definition
 
