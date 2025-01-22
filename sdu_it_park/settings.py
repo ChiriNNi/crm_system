@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,7 +78,14 @@ WSGI_APPLICATION = 'sdu_it_park.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default="postgresql://technopark_it:1nhrhgc6akr02y5GU3RqjEIr48mh1iEw@dpg-cu8hnndsvqrc73bara20-a.oregon-postgres.render.com/crm_system_db_v2nx")
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'crm_system_db_v2nx',  # Имя вашей базы данных
+        'USER': 'technopark_it',  # Ваш пользователь базы данных
+        'PASSWORD': '1nhrhgc6akr02y5GU3RqjEIr48mh1iEw',  # Ваш пароль пользователя базы данных
+        'HOST': 'dpg-cu8hnndsvqrc73bara20-a',
+        'PORT': '5432',  # Стандартный порт PostgreSQL
+    }
 }
 
 
